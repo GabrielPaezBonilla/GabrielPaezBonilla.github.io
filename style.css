@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+    margin: 25px;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: white;
+    color: black;
+}
+h1 {
+    font-family: Georgia;
+    font-size: 250%;
+}
+pre {
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;
+}
