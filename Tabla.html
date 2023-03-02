@@ -96,8 +96,40 @@
     </div>
     </div>
     </section>
-    <footer style="margin: 25px;">
-        
+    <footer style="margin: 25px; text-align: center;">
+        <h2 style="color: red">Deseas mas informacion?</h2>
+        <p style="color: white">Llena este formulario para poder ayudarte mejor.
+        <br>
+        <form>
+            <label for="fnombre" style="color: white">Nombre:</label> <br>
+            <input type="text" id="fnombre" name="fnombre"> <br>
+
+            <label for="fcorreo" style="color: white">Correo:</label> <br>
+            <input type="email" id="fcorreo" name="fcorreo"> <br><br>
+
+            <label for="fgenero" style="color: white">Genero:</label> <br>
+            <input type="radio" id="fgenero" name="fgenero" value="Masculino">
+            <label for="Masculino" style="color: red">Masculino</label> <br>
+            <input type="radio" id="fgenero" name="fgenero" value="Femenino"> 
+            <label for="Femenino" style="color: red">Femenino</label> <br><br>
+
+            <p style="color: white">Que es lo que mas te gusta?:</p>
+
+            <input type="checkbox" id="Preferencia1" name="Preferencia1" value="Shushi">
+            <label for="Preferencia1" style="color: red">Me gusta el sushi</label> <br>
+
+            <input type="checkbox" id="Preferencia2" name="Preferencia2" value="Pizza">
+            <label for="Preferencia2" style="color: red">Me gusta la pizza</label> <br>
+
+            <input type="checkbox" id="Preferencia3" name="Preferencia3" value="Tacos">
+            <label for="Preferencia3" style="color: red">Me gustan los tacos</label> <br><br>
+
+            <p style="color: white">Comentarios</p>
+            <textarea name="Comentarios" cols="40" rows="5"></textarea> <br><br>
+
+            <input type="submit" value="ENVIAR">
+        </form>
+        </p>
     </footer>
 </body>
 </html>
