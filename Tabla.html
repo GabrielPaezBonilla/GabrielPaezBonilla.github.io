@@ -102,6 +102,7 @@
         <p style="color: white">Llena este formulario para poder ayudarte mejor.
         <br>
         <form>
+        <fieldset>
             <label for="fnombre" style="color: white">Nombre:</label> <br>
             <input type="text" id="fnombre" name="fnombre"> <br>
 
@@ -126,7 +127,7 @@
             <label for="Preferencia3" style="color: red">Me gustan los tacos</label> <br><br>
 
             <label for="Estado" style="color: white">Seleccione su estado de nacimiento:</label> <br>
-            <select id="Estados" name="Estados">
+            <select id="Estados" name="Estados" size=3 multiple>
                 <option value="Aguascalientes">Aguascalientes</option>
                 <option value="Baja California">Baja California</option>
                 <option value="Baja California Sur">Baja California Sur</option>
@@ -163,10 +164,26 @@
 
             <br><br>
 
+            <label for="Ciudad" style="color: white">Escribe o elige tu ciudad</label>
+            <br>
+            <input list="Ciudad">
+            <datalist id="Ciudad">
+                <option value="Los Mochis">
+                <option value="Culiacán">
+                <option value="Mazatlán">
+                <option value="Concordia">
+                <option value="Escuinapa">
+            </datalist>
+
+            <br><br>
+            <button type="button" onclick="alert('presionaste el boton')">Haz click!</button>
+            <br><br>
+
             <p style="color: white">Comentarios</p>
             <textarea name="Comentarios" cols="40" rows="5"></textarea> <br><br>
 
             <input type="submit" value="ENVIAR">
+        </fieldset>
         </form>
         </p>
     </footer>
