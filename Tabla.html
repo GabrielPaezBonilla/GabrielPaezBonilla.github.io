@@ -101,22 +101,34 @@
         <h2 style="color: red">Deseas mas informacion?</h2>
         <p style="color: white">Llena este formulario para poder ayudarte mejor.
         <br>
-        <form>
-        <fieldset>
+        <form action="mailto:21325050510613@cbtis051.edu.mx" method="post">
+
+            <input type="hidden" id="tipoForm" name="tipoForm" value="formx43-2">
+
             <label for="fnombre" style="color: white">Nombre:</label> <br>
-            <input type="text" id="fnombre" name="fnombre"> <br>
+            <input type="text" id="fnombre" name="fnombre" size="60" maxlength="80"
+            placeholder="Nombres Apellido Paterno Apellido Materno" autofocus autocomplete="on"> <br>
 
             <label for="fpassword" style="color: white">Contraseña:</label><br>
             <input type="password" id="fpassword" name="password"><br>
 
             <label for="fcorreo" style="color: white">Correo:</label> <br>
-            <input type="email" id="fcorreo" name="fcorreo"> <br><br>
+            <input type="email" id="fcorreo" name="fcorreo" placeholder="usuario@corre.com"> <br><br>
 
             <label for="fnacimiento" style="color: white">Fecha Nacimiento:</label>
             <input type="datetime-local" id="fnacimiento" name="fnacimiento" min="1900-01-01"> <br><br>
 
             <label for="fcabello" style="color: white">Color de cabello:</label>
             <input type="color" od="fcabello" name="fcabello" value="#000000"> <br><br>
+
+            <label for="fpromedio" style="color: white"> Cual es tu promedio escolar? </label>
+            <input type="number" id="fpromedio" name="fpromedio" min="0" max="10" step="0.1" value="8"> <br><br>
+
+            <label for="fgusto" style="color: white">¿Grado de satisfacción con tu escuela? </label>
+            <input type="range" id="fgusto" name="fgusto"> <br><br>
+
+            <label for="ftelefono" style="color: white">Número de teléfono? :</label> <!-- +52 669-990-0301 -->
+            <input type="tel" id="ftelefono" name="telefono" pattern="+[0-9]{3} [0-9]{3}-[0-9]{3}-[0.9]{4}" required> <br><br>
 
             <label for="ffoto" style="color: white">Elige tu foto para tu perfil:</label> <br>
             <input type="file" id="ffoto" name="ffoto"> <br><br>
@@ -198,7 +210,6 @@
 
             <input type="submit" value="ENVIAR"> <br>
             <input type="image" src="img/enviar.png" alt="Enviar" width="100" height="40">
-        </fieldset>
         </form>
         </p>
     </footer>
