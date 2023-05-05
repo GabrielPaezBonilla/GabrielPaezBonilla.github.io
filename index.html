@@ -22,7 +22,7 @@
                     let k = baraja[i];
                     baraja[i] = baraja[j];
                     baraja[j] = k;
-                    document.getElementById("carta").innerHTML=('<img src="img1/'+baraja[i-1]+'.jpg">');
+                    document.getElementById("carta").innerHTML=('<img src="Img1/'+baraja[i-1]+'.jpg">');
                 }
             } //desordena()
 
@@ -31,7 +31,7 @@
                     document.getElementById("butun").style.visibility = "hidden";
                 } else {
                     indi++;
-                    document.getElementById("carta").innerHTML=('<img src="img1/'+baraja[indi]+'.jpg">');
+                    document.getElementById("carta").innerHTML=('<img src="Img1/'+baraja[indi]+'.jpg">');
                     document.getElementById("boton").style.visibility = "visible";
                 }
                 document.getElementById("cartas").innerHTML=(indi+1);
@@ -45,7 +45,7 @@
                     document.getElementById("boton").style.visibility = "hidden";
                 } else {
                     indi--;
-                    document.getElementById("carta").innerHTML=('<img src="img1/'+baraja[indi]+'.jpg">');
+                    document.getElementById("carta").innerHTML=('<img src="Img1/'+baraja[indi]+'.jpg">');
                     document.getElementById("butun").style.visibility = "visible";
                 }
                 document.getElementById("cartas").innerHTML=(indi+1);
